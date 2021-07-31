@@ -7,10 +7,10 @@ var difference = price2 - price1;
 var multiplication = price1 * price2;
 var division = price1 / price2;
 
-// console.log('add', sum);
-// console.log(difference);
-// console.log('gun korsi', multiplication);
-// console.log(division);
+console.log('add', sum);
+console.log('difference', difference);
+console.log('gun korsi', multiplication);
+console.log('division', division);
 
 // Mathematical operation shorthand
 var doublePrice = price2 * 20;
