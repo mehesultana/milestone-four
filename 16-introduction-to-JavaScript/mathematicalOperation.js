@@ -21,3 +21,11 @@ var moneyAvailable = 100;
 var orangePrice = 5;
 var orangeQuantity = moneyAvailable / orangePrice;
 console.log('orange quantity', orangeQuantity);
+
+// modulus
+var mangoes = 57;
+var hungryPerson = 12;
+var dividing = mangoes / hungryPerson;
+console.log(dividing);
+var remaining = mangoes % hungryPerson;
+console.log(remaining);
