@@ -5,7 +5,8 @@ var sum = price1 + price2;
 var difference = price2 - price1;
 var multiplication = price1 * price2;
 var division = price1 / price2;
-console.log(sum);
+
+console.log('add', sum);
 console.log(difference);
-console.log(multiplication);
+console.log('gun korsi', multiplication);
 console.log(division);
