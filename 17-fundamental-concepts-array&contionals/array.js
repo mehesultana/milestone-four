@@ -1,4 +1,5 @@
 // 17-2 Declare Array, array length and array index
+//Declare Array
 var friendsAge = [11, 14, 15];
 console.log(friendsAge);
 
@@ -13,5 +14,7 @@ console.log(oddNumbers);
 
 var vowels = ['a', 'e', 'i', 'o', 'u'];
 console.log(vowels);
+
+//array length
 var vowelsCount = vowels.length;
 console.log(vowelsCount);
