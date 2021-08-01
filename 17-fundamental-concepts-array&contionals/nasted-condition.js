@@ -10,7 +10,7 @@ if (danishPrice < myBudget) {
 } else if (butterBreadPrice < myBudget) {
     console.log('butterbon diye cha khaboooo');
 } else if (toastBiscuitPrice < myBudget) {
-    console.log('butterbon diye cha khaboooo');
+    console.log('toast diye cha khaboooo');
 } else {
     console.log('batash diye cha khabo karon amr tk nai');
 }
