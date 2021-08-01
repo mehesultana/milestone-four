@@ -15,6 +15,6 @@ console.log(oddNumbers);
 var vowels = ['a', 'e', 'i', 'o', 'u'];
 console.log(vowels);
 
-//array length
+//array length (array elemet number)
 var vowelsCount = vowels.length;
 console.log(vowelsCount);
