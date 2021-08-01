@@ -11,6 +11,7 @@ console.log(index);
 
 console.log(numbers);
 numbers[1] = 64; //replace
+numbers[4] = 35; //replace
 console.log(numbers);
 
 //get index
@@ -21,4 +22,7 @@ var secondIndex = books[4];
 console.log(secondIndex);
 
 var secondIndex = books[0];
+console.log(secondIndex);
+
+var secondIndex = books[9]; //undefined
 console.log(secondIndex);
