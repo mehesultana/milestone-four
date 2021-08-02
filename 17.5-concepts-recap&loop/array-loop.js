@@ -17,7 +17,7 @@ for (var i = 0; i < numbers.length; i++) {
     console.log(element);
 }
 
-var items = ['bottle', 'mobile', 'charger', 'watch', 'book', 'paper'];
+var items = ['bottle', 'mobile', 'charger', 'watch', 'book', 'paper', 'pen'];
 
 for (var i = 0; i < items.length; i++) {
     var item = items[i];
