@@ -1,6 +1,6 @@
 //17_5-2 While loop, debug and understand while loop
-var number = 1;
-// loop variable
+
+var number = 1; // loop variable
 while (number <= 20) {
     console.log(number);
     number++;
