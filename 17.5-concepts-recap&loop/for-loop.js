@@ -16,9 +16,9 @@ for (var i = 1; i <= 10; i++) {
     console.log(i);
 }
 
-// odd numbers
-i += 2;
-i = i + 2;
+// odd numbers   (// i += 2;
+// i = i + 2;)
+
 for (var i = 1; i <= 20; i += 2) {
     console.log(i);
 }
