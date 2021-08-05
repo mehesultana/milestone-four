@@ -12,7 +12,7 @@ if (color == 'blue') {
 } else if (color == 'yellow') {
     console.log('color is yellow');
 } else {
-    console.log('color is red');
+    console.log('color is black');
 }
 
 switch (color) {
@@ -32,7 +32,6 @@ switch (color) {
     case 'yellow':
         console.log('color is yellow');
         break;
-    case 'black':
+    default:
         console.log('color is black');
-        break;
 }
