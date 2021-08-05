@@ -11,13 +11,21 @@ var result = addTwoNumber(firstNumber, secondNumber);
 console.log('result value: ', result);
 
 //multiplication
-function multiplyTwonumbers(num1, num2) {
+function multiplyTwoNumbers(num1, num2) {
     var result = num1 * num2;
     return result;
 }
 
-var total = multiplyTwonumbers(5, 100);
+var total = multiplyTwoNumbers(5, 100);
 console.log('total after multiplication', total);
 
-//
+//difference
+function differenceTwoNumbers(num1, num2) {
+    var result = num1 - num2;
+    return result;
+}
+
+var total = differenceTwoNumbers(50, 20);
+console.log('difference ', total);
+
 //
