@@ -94,3 +94,18 @@ for (var i = 0; i < items.length; i++) {
     var item = items[i];
     console.log(item);
 }
+
+// 10. you have an array of numbers. display only the numbers bigger than 80
+// 11. write a function that takes three numbers and returns the multiplication of the three numbers
+
+// 12. declare an object and change any property of that object.
+var book = {
+    page: 292,
+    price: 600,
+    bookName: 'Treasure Island',
+    authorName: 'Robert Louis Stevenson',
+    genre: 'Adventure fiction',
+};
+
+book.price = 300;
+console.log(book);
