@@ -81,3 +81,16 @@ while (num <= 19) {
 }
 
 // 8. declare an array. number of elements. update or change 4th position element. add or remove elements. check whether a specific value exists in the array
+
+var marks = [67, 89, 95, 46, 93, 65, 39, 60, 84, 54];
+console.log('number of elements ', marks.length);
+var marks2 = marks.slice(4, 4);
+console.log(marks2);
+
+// 9. use any for loop to display every elements of an array
+var items = ['book', 'computer', 'phone', 'light', 'bottle', 'chair'];
+
+for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    console.log(item);
+}
