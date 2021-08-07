@@ -50,3 +50,22 @@ console.log('myMoney < yourMoney', myMoney < yourMoney);
 console.log('myMoney = yourMoney', myMoney == yourMoney);
 
 console.log('myMoney != yourMoney', myMoney != yourMoney);
+
+// 5. two conditions. case-1: fulfill both conditions. case-2: fulfill at least one condition
+var hasWifi = true;
+var gotPassword = true;
+
+if (hasWifi == true && gotPassword == true) {
+    console.log('eibar lafaooo');
+} else {
+    console.log('muri khaooo!');
+}
+
+var wantShopping = true;
+var hasMoney = 20000;
+
+if ((wantShopping = true || hasMoney > 25000)) {
+    console.log('let`s gooooo');
+} else {
+    console.log('batasss khaaooo');
+}
