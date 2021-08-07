@@ -21,3 +21,18 @@ let number = 35;
 console.log(number);
 
 // 3. Simple Math Operations() +, -, *, /, %)
+let bookPrice = 530;
+let penPrice = 53;
+let paperPrice = 245;
+
+let totalPrice = bookPrice + penPrice + paperPrice;
+console.log('totalPrice is ', totalPrice);
+
+let priceDifference = bookPrice - paperPrice;
+console.log('price difference is ', priceDifference);
+
+let priceMultiplication = bookPrice * penPrice * paperPrice;
+console.log('price multiplication = ', priceMultiplication);
+
+let dividing = bookPrice / penPrice;
+console.log(dividing);
