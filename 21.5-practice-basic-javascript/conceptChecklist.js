@@ -69,3 +69,15 @@ if ((wantShopping = true || hasMoney > 25000)) {
 } else {
     console.log('batasss khaaooo');
 }
+
+// 6. if-else
+
+//7. while loop to display 7 to 19 all numbers. only display odd numbers including 7 to 19
+let num = 7;
+
+while (num <= 19) {
+    console.log(num);
+    num = num + 2;
+}
+
+// 8. declare an array. number of elements. update or change 4th position element. add or remove elements. check whether a specific value exists in the array
