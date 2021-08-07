@@ -39,3 +39,14 @@ console.log(dividing);
 
 let remaining = paperPrice % penPrice;
 console.log(remaining);
+
+// 4. comparison ()
+var myMoney = 50;
+var yourMoney = 46;
+console.log('myMoney > yourMoney', myMoney > yourMoney);
+
+console.log('myMoney < yourMoney', myMoney < yourMoney);
+
+console.log('myMoney = yourMoney', myMoney == yourMoney);
+
+console.log('myMoney != yourMoney', myMoney != yourMoney);
