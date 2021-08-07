@@ -36,3 +36,6 @@ console.log('price multiplication = ', priceMultiplication);
 
 let dividing = bookPrice / penPrice;
 console.log(dividing);
+
+let remaining = paperPrice % penPrice;
+console.log(remaining);
