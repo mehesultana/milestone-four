@@ -51,7 +51,7 @@ function deliveryCost(tshirts) {
     } else {
         const firstTshirts = 100 * first100Tshirts;
         const secondTshirts = 100 * second100PlusTshirts;
-        const restTshirts = tshirts - 100;
+        const restTshirts = tshirts - 200;
         const restTshirtsDelivery = restTshirts * third200PlusTshirts;
         const totaldeliveryCost = firstTshirts + secondTshirts + restTshirtsDelivery;
 
