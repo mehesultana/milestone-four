@@ -27,3 +27,15 @@ function bookCalculator(bookQuantity1, bookQuantity2, bookQuantity3) {
 
 const pageCalculation = bookCalculator(5, 7, 10);
 console.log('page Calculation = ', pageCalculation);
+
+//4. friends
+var bestFriend = ['trishna', 'tonu', 'salma', 'nur', 'sultana'];
+var smallest = bestFriend[0];
+
+for (var i = 1; i < bestFriend.length; i++) {
+    if (bestFriend[i] < smallest) {
+        smallest = bestFriend[i];
+    }
+}
+
+console.log(smallest);
