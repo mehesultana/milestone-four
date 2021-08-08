@@ -1,13 +1,25 @@
 // 21_5-2 Simple Problem solving checklist and practice
 // 1. conversation (feetToInch)
-var feetToInch = 14;
-var inch = feetToInch * 12;
-console.log(inch);
+
+function feetToInch(feet) {
+    var inch = feet * 12;
+    return inch;
+}
+
+var myfeet = 17;
+var inch = feetToInch(myfeet);
+console.log('my feet to inch', inch);
 
 // 2. conversion (centimeterToMeter)
-var centimeterToMeter = 160;
-var meter = centimeterToMeter / 100;
-console.log(meter);
+
+function centimeterToMeter(centimeter) {
+    var meter = centimeter / 100;
+    return meter;
+}
+
+var myMeter = 160;
+var meter = centimeterToMeter(myMeter);
+console.log('my centimeter to meter', meter);
 
 // 3. calculation
 
