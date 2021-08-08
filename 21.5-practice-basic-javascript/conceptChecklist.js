@@ -96,6 +96,15 @@ for (var i = 0; i < items.length; i++) {
 }
 
 // 10. you have an array of numbers. display only the numbers bigger than 80
+
+var prices = [86, 76, 36, 56, 68, 89, 102, 80, 85, 43, 64];
+
+function biggerElements(prices) {
+    return prices.filter((biggerElements) => biggerElements > 80);
+}
+
+console.log('bigger Elements = ', biggerElements(prices));
+
 // 11. write a function that takes three numbers and returns the multiplication of the three numbers
 function multiply(num1, num2, num3) {
     const result = num1 * num2 * num3;
