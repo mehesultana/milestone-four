@@ -32,3 +32,31 @@ function totalSales(shirtSales, pantSales, shoeSales) {
 
 const salesCalculation = totalSales(7, 5, 13);
 console.log('sales Calculation = ', salesCalculation);
+
+//3
+function deliveryCost(tshirts) {
+    const first100Tshirts = 100;
+    const second100PlusTshirts = 80;
+    const third200PlusTshirts = 50;
+
+    if (tshirts <= 100) {
+        const count = tshirts * first100Tshirts;
+        return count;
+    } else if (tshirts <= 200) {
+        const firstTshirts = 100 * first100Tshirts;
+        const restTshirts = tshirts - 100;
+        const secondTshirts = restTshirts * second100PlusTshirts;
+        const totalTshirts = firstTshirts + secondTshirts;
+        return totalTshirts;
+    } else {
+        const firstTshirts = 100 * first100Tshirts;
+        const secondTshirts = 100 * second100PlusTshirts;
+        const restTshirts = tshirts - 100;
+        const restTshirtsDelivery = restTshirts * third200PlusTshirts;
+        const totaldeliveryCost = firstTshirts + secondTshirts + restTshirtsDelivery;
+
+        return totaldeliveryCost;
+    }
+}
+const totalCount = deliveryCost(220);
+console.log('cost= ', totalCount);
