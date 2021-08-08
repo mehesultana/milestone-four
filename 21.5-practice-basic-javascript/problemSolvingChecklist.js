@@ -39,3 +39,13 @@ for (var i = 1; i < bestFriend.length; i++) {
 }
 
 console.log(smallest);
+
+//5. will stop the loop if the array has any negative number and returns all the positive number before the negative number
+var numbers = [85, 76, 89, 24, 87, 76, -53, 78, 43, -76, 65, -35];
+for (var i = 0; i < numbers.length; i++) {
+    var number = numbers[i];
+    console.log(number);
+    if (number < 0) {
+        break;
+    }
+}
