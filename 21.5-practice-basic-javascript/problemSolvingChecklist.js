@@ -1,4 +1,3 @@
-// https://github.com/mehesultana/milestone-four/blob/master/21.5-practice-basic-javascript/problemSolvingChecklist.js
 // 21_5-2 Simple Problem solving checklist and practice
 // 1. conversation (feetToInch)
 
