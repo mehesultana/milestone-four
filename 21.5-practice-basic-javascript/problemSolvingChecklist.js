@@ -2,12 +2,17 @@
 // 1. conversation (feetToInch)
 
 function feetToInch(feet) {
-    var inch = feet * 12;
+    if (typeof feet !== 'number' || feet === 'undefined' || feet === 'null') {
+        return 'enter a valid number';
+    } else if (feet < 0) {
+        return 'feet value can not be negative';
+    }
+
+    const inch = feet * 12;
     return inch;
 }
 
-var myfeet = 17;
-var inch = feetToInch(myfeet);
+const inch = feetToInch(-7);
 console.log('my feet to inch', inch);
 
 // 2. conversion (centimeterToMeter)
@@ -41,16 +46,23 @@ const pageCalculation = bookCalculator(5, 7, 10);
 console.log('page Calculation = ', pageCalculation);
 
 //4. friends
-var bestFriend = ['trishna', 'tonu', 'salma', 'nur', 'sultana'];
-var smallest = bestFriend[0];
+var bestFriend = ['trishna', 'tonu', 'salma', 'nur', 'mehe', 'sultana'];
 
-for (var i = 1; i < bestFriend.length; i++) {
-    if (bestFriend[i] < smallest) {
-        smallest = bestFriend[i];
+function smallFriend(friends) {
+    var small = friends[0].length;
+    var smallest;
+
+    for (var i = 1; i < friends.length; i++) {
+        if (friends[i].length < small) {
+            small = friends[i].length;
+            smallest = friends[i];
+        }
     }
+    return smallest;
 }
 
-console.log(smallest);
+var myFriend = smallFriend(bestFriend);
+console.log('my friend', myFriend);
 
 //5. will stop the loop if the array has any negative number and returns all the positive number before the negative number
 var numbers = [85, 76, 89, 24, 87, 76, -53, 78, 43, -76, 65, -35];
