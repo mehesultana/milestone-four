@@ -17,6 +17,14 @@ console.log('seer to mon = ', mon);
 
 //2.calculation
 function totalSales(shirtSales, pantSales, shoeSales) {
+    if (typeof shirtSales !== 'number' || shirtSales === 'undefined' || shirtSales === 'null') {
+        return 'please enter  valid input';
+    } else if (typeof pantSales !== 'number' || pantSales === 'undefined' || pantSales === 'null') {
+        return 'please enter  valid input';
+    } else if (typeof shoeSales !== 'number' || shoeSales === 'undefined' || shoeSales === 'null') {
+        return 'please enter  valid input';
+    }
+
     const perShirtPrice = 100;
     const perPantPrice = 200;
     const perShoePrice = 500;
@@ -30,12 +38,12 @@ function totalSales(shirtSales, pantSales, shoeSales) {
     return total;
 }
 
-const salesCalculation = totalSales(7, 5, 13);
+const salesCalculation = totalSales(5, 7, 10);
 console.log('sales Calculation = ', salesCalculation);
 
-//3
+//3 (deliveryCost)
 function deliveryCost(tshirts) {
-    if (typeof tshirts !== 'number' || tshirts === 'undefined' || tshirts === 'null') {
+    if (typeof tshirts !== 'number' || tshirts === 'undefined' || tshirts === 'null' || tshirts === '') {
         return 'please enter  valid input';
     }
 
@@ -65,4 +73,26 @@ function deliveryCost(tshirts) {
 const totalCount = deliveryCost(220);
 console.log('cost = ', totalCount);
 
-//4
+//4 (perfectFriend)
+
+function perfectFriend(friends) {
+    if (typeof friends !== 'string' || friends === 'undefined' || friends === 'null') {
+        return 'enter string';
+    }
+    var friendName = friends[0].length;
+    var equalFive;
+
+    for (var i = 1; i < friends.length; i++) {
+        if (friends[i].length == 5) {
+            friendName = friends[i].length;
+            equalFive = friends[i];
+            break;
+        }
+    }
+    return equalFive;
+}
+
+var bestFriend = ['trishna', 'tonu', 'salma', 'nur', 'rakib', 'mehe', 'arifa', 'sultana'];
+
+var myFriend = perfectFriend(bestFriend);
+console.log('equalFive = ', myFriend);
