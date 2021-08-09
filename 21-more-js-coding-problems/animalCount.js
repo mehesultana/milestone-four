@@ -24,4 +24,4 @@ function animalCount(miles) {
 }
 
 const animals = animalCount(35);
-console.log(animals);
+console.log('animals = ', animals);
