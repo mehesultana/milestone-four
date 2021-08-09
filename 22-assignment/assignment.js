@@ -56,14 +56,14 @@ function deliveryCost(tshirts) {
 
     if (tshirts <= 100) {
         const count = tshirts * first100Tshirts;
-        console.log('first', count);
+        // console.log('first', count);
         return count;
     } else if (tshirts <= 200) {
         const firstTshirts = first100Tshirts * 100;
         const restTshirts = tshirts - 100;
         const secondTshirts = restTshirts * second100PlusTshirts;
         const totalTshirts = firstTshirts + secondTshirts;
-        console.log('second', totalTshirts);
+        // console.log('second', totalTshirts);
         return totalTshirts;
     } else {
         const firstTshirts = first100Tshirts * 100;
@@ -71,7 +71,7 @@ function deliveryCost(tshirts) {
         const restTshirts = tshirts - 200;
         const restTshirtsDelivery = restTshirts * third200PlusTshirts;
         const totaldeliveryCost = firstTshirts + secondTshirts + restTshirtsDelivery;
-        console.log('third', totaldeliveryCost);
+        // console.log('third', totaldeliveryCost);
         return totaldeliveryCost;
     }
 }
@@ -90,7 +90,7 @@ function perfectFriend(friends) {
     let equalFive;
 
     for (let i = 1; i < friends.length; i++) {
-        if (friends[i].length == 5) {
+        if (friends[i].length === 5) {
             friendName = friends[i].length;
             equalFive = friends[i];
             break;
