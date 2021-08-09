@@ -35,6 +35,10 @@ console.log('sales Calculation = ', salesCalculation);
 
 //3
 function deliveryCost(tshirts) {
+    if (typeof tshirts !== 'number' || tshirts === 'undefined' || tshirts === 'null') {
+        return 'please enter  valid input';
+    }
+
     const first100Tshirts = 100;
     const second100PlusTshirts = 80;
     const third200PlusTshirts = 50;
@@ -59,4 +63,6 @@ function deliveryCost(tshirts) {
     }
 }
 const totalCount = deliveryCost(220);
-console.log('cost= ', totalCount);
+console.log('cost = ', totalCount);
+
+//4
