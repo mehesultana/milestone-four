@@ -1,5 +1,6 @@
 //22-1 Basic JavaScript Problem Solving assignment
 
+//  problem 1 solve
 // 1. conversation (seerToMon)
 function seerToMon(seer) {
     if (typeof seer !== 'number' || seer === 'undefined' || seer === 'null') {
@@ -15,50 +16,54 @@ function seerToMon(seer) {
 const mon = seerToMon(160);
 console.log('seer to mon = ', mon);
 
-//2.calculation
-function totalSales(shirtSales, pantSales, shoeSales) {
-    if (typeof shirtSales !== 'number' || shirtSales === 'undefined' || shirtSales === 'null') {
+//  problem 2 solve
+// (totalSale)
+function totalSales(shirtQuantity, pantQuantity, shoeQuantity) {
+    if (typeof shirtQuantity !== 'number' || shirtQuantity === 'undefined' || shirtQuantity === 'null' || shirtQuantity < 0) {
         return 'please enter  valid input';
-    } else if (typeof pantSales !== 'number' || pantSales === 'undefined' || pantSales === 'null') {
+    } else if (typeof pantQuantity !== 'number' || pantQuantity === 'undefined' || pantQuantity === 'null' || pantQuantity < 0) {
         return 'please enter  valid input';
-    } else if (typeof shoeSales !== 'number' || shoeSales === 'undefined' || shoeSales === 'null') {
+    } else if (typeof shoeQuantity !== 'number' || shoeQuantity === 'undefined' || shoeQuantity === 'null' || shoeQuantity < 0) {
         return 'please enter  valid input';
     }
 
-    const perShirtPrice = 100;
-    const perPantPrice = 200;
-    const perShoePrice = 500;
+    const shirtPrice = 100;
+    const pantPrice = 200;
+    const shoePrice = 500;
     //sell calculation
-    const totalShirtSales = shirtSales * perShirtPrice;
-    const totalPantSales = pantSales * perPantPrice;
-    const totalShoeSales = shoeSales * perShoePrice;
+    const totalShirt = shirtQuantity * shirtPrice;
+    const totalPant = pantQuantity * pantPrice;
+    const totalShoe = shoeQuantity * shoePrice;
 
     //total sales
-    const total = totalShirtSales + totalPantSales + totalShoeSales;
+    const total = totalShirt + totalPant + totalShoe;
     return total;
 }
 
 const salesCalculation = totalSales(5, 7, 10);
 console.log('sales Calculation = ', salesCalculation);
 
-//3 (deliveryCost)
+//  problem 3 solve
+// (deliveryCost)
 function deliveryCost(tshirts) {
-    if (typeof tshirts !== 'number' || tshirts === 'undefined' || tshirts === 'null' || tshirts === '') {
-        return 'please enter  valid input';
-    }
-
     const first100Tshirts = 100;
     const second100PlusTshirts = 80;
     const third200PlusTshirts = 50;
 
+    if (typeof tshirts !== 'number' || tshirts === 'undefined' || tshirts === 'null' || tshirts === '' || tshirts < 0) {
+        return 'please enter  valid input';
+    }
+
     if (tshirts <= 100) {
         const count = tshirts * first100Tshirts;
+        console.log('first', count);
         return count;
     } else if (tshirts <= 200) {
         const firstTshirts = 100 * first100Tshirts;
         const restTshirts = tshirts - 100;
         const secondTshirts = restTshirts * second100PlusTshirts;
         const totalTshirts = firstTshirts + secondTshirts;
+        console.log('second', totalTshirts);
         return totalTshirts;
     } else {
         const firstTshirts = 100 * first100Tshirts;
@@ -66,23 +71,25 @@ function deliveryCost(tshirts) {
         const restTshirts = tshirts - 200;
         const restTshirtsDelivery = restTshirts * third200PlusTshirts;
         const totaldeliveryCost = firstTshirts + secondTshirts + restTshirtsDelivery;
-
+        console.log('third', totaldeliveryCost);
         return totaldeliveryCost;
     }
 }
 const totalCount = deliveryCost(220);
 console.log('cost = ', totalCount);
 
-//4 (perfectFriend)
+//  problem 4 solve
+// (perfectFriend)
+const bestFriend = ['trishna', 'tonu', 'salma', 'nur', 'rakib', 'mehe', 'arifa', 'sultana'];
 
 function perfectFriend(friends) {
-    if (typeof friends !== 'string' || friends === 'undefined' || friends === 'null') {
-        return 'enter string';
+    if (typeof friends === 'string' || friends === 'undefined' || friends === 'null') {
+        return 'Please enter valid value';
     }
-    var friendName = friends[0].length;
-    var equalFive;
+    let friendName = friends[0].length;
+    let equalFive;
 
-    for (var i = 1; i < friends.length; i++) {
+    for (let i = 1; i < friends.length; i++) {
         if (friends[i].length == 5) {
             friendName = friends[i].length;
             equalFive = friends[i];
@@ -92,7 +99,5 @@ function perfectFriend(friends) {
     return equalFive;
 }
 
-var bestFriend = ['trishna', 'tonu', 'salma', 'nur', 'rakib', 'mehe', 'arifa', 'sultana'];
-
-var myFriend = perfectFriend(bestFriend);
+const myFriend = perfectFriend(bestFriend);
 console.log('equalFive = ', myFriend);
