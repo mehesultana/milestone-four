@@ -13,7 +13,7 @@ while (number <= 20) {
 }
 
 // even numbers
-number = 0;
+var number = 0;
 while (number <= 20) {
     console.log(number);
     number = number + 2;
