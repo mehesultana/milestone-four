@@ -1,7 +1,7 @@
 //22-1 Basic JavaScript Problem Solving assignment
 
 //  problem 1 solve
-// 1. conversation (seerToMon)
+// conversation (seerToMon)
 function seerToMon(seer) {
     if (typeof seer !== 'number' || seer === 'undefined' || seer === 'null') {
         return 'enter a valid number';
