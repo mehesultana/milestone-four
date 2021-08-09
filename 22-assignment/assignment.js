@@ -59,7 +59,7 @@ function deliveryCost(tshirts) {
         console.log('first', count);
         return count;
     } else if (tshirts <= 200) {
-        const firstTshirts = 100 * first100Tshirts;
+        const firstTshirts = first100Tshirts * 100;
         const restTshirts = tshirts - 100;
         const secondTshirts = restTshirts * second100PlusTshirts;
         const totalTshirts = firstTshirts + secondTshirts;
