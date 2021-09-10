@@ -13,6 +13,7 @@ console.log(name);
 
 //integer
 var book = 3;
+
 //float
 var price = 85.98;
 
